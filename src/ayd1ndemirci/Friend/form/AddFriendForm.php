@@ -21,9 +21,9 @@ class AddFriendForm extends CustomForm
     public function __construct(\pocketmine\player\Player $player)
     {
         foreach (Server::getInstance()->getOnlinePlayers() as $onlinePlayer) {
-            //if ($player->getName() !== $onlinePlayer->getName()) {
-            $this->playerList[] = $onlinePlayer->getName();
-            // }
+            if ($player->getName() !== $onlinePlayer->getName()) {
+                $this->playerList[] = $onlinePlayer->getName();
+            }
         }
         sort($this->playerList);
 
