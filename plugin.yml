@@ -1,0 +1,9 @@
+name: Friend
+main: ayd1ndemirci\Friend\Main
+api: 5.0.0
+version: 1.0.0
+author: ayd1ndemirci
+
+permissions:
+  friend.permission:
+    default: true
